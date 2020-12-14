@@ -1,10 +1,15 @@
+// C++ program to count number of strings
+// of n characters with
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
 
+// n is total number of characters.
+// bCount and cCount are counts of 'b'
+// and 'c' respectively.
 int countStr(int n, int bCount, int cCount)
 {
-
+	// Base cases
 	if (bCount < 0 || cCount < 0) return 0;
 	if (n == 0) return 1;
 	if (bCount == 0 && cCount == 0) return 1;
